@@ -49,7 +49,7 @@ docker compose exec php bash
 ```
 composer install
 ```
-その後phpコンテナ内でテーブルとダミーデータの作成を行います。
+その後「.envファイル」を作成し、phpコンテナ内でアプリケーションの暗号キーの作成、テーブルとダミーデータの作成を行います。
 ```
 php artisan key:generate
 ```
