@@ -1,0 +1,163 @@
+.container {
+    max-width: 100%;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    padding: 50px 20%;
+}
+
+.message-space {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.custom-btn {
+    background-color: #FFA929;
+    border: none;
+    color: #4B4B4B;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    background-color: #DF9242;
+    color: #4B4B4B;
+    text-decoration: none;
+}
+
+.custom-btn:active {
+    background-color: #DF9425;
+    color: #4B4B4B;
+    text-decoration: none;
+}
+
+.sort-label {
+    font-weight: bold;
+}
+
+select.sort-select option[disabled] {
+    color: #888;
+}
+
+.form-content {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #555;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-item .page-link {
+    color: #616161;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 0.5rem 0.75rem;
+    border-radius: 50%;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #F5C800;
+    border-color: #F5C800;
+    border-radius: 50%;
+}
+
+.page-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    border-radius: 50%;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    border-radius: 50%;
+}
+
+.page-item.active .page-link:first-child,
+.page-item.active .page-link:last-child {
+    border-radius: 50%;
+}
+
+/* 検索フォームと並び替えセレクトボックスのスタイル */
+.sort-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid gold;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.sort-button span {
+    margin-left: 5px;
+    background-color: gold;
+    border-radius: 50%;
+    padding: 0 5px;
+    cursor: pointer;
+}

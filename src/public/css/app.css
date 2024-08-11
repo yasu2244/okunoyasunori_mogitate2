@@ -1,0 +1,26 @@
+.header {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.header-logo {
+    color: #FAE380;
+    font-size: 2em;
+    font-family: "Courgette", cursive;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+.header-logo a {
+    color: #FAE380;
+    text-decoration: none;
+}
+
+.header-logo:hover {
+    color: #FAE380;
+    text-decoration: none;
+}
+
+.main {
+    background-color: #f0f0f0;
+}
