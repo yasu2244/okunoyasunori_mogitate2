@@ -3,31 +3,61 @@
 まずアプリケーションのディレクトリを作成しています。
 ここでは「mogitate」
 ```
-$ mkdir mogitate
-$ cd mogitate
-$ mkdir docker src
-$ touch docker-compose.yml
-$ cd docker
-$ mkdir mysql nginx php
-$ mkdir mysql/data
-$ touch mysql/my.cnf
-$ touch nginx/default.conf
-$ touch php/Dockerfile
-$ touch php/php.ini
+mkdir mogitate
+```
+```
+cd mogitate
+```
+```
+mkdir docker src
+```
+```
+touch docker-compose.yml
+```
+```
+cd docker
+```
+```
+mkdir mysql nginx php
+```
+```
+mkdir mysql/data
+```
+```
+touch mysql/my.cnf
+```
+```
+touch nginx/default.conf
+```
+```
+touch php/Dockerfile
+```
+```
+touch php/php.ini
 ```
 その後各ファイルを作成します。
 ファイルが出来たらdockerでパッケージをインストールして環境構築を行います。
 ```
-$ docker compose build
-$ docker compose up -d
-$ docker compose exec php bash
-$ composer install
+docker compose build
+```
+```
+docker compose up -d
+```
+```
+docker compose exec php bash
+```
+```
+composer install
 ```
 その後phpコンテナ内でテーブルとダミーデータの作成を行います。
 ```
-$ php artisan key:generate
-$ php artisan migrate
-$ php artisan db:seed
+php artisan key:generate
+```
+```
+php artisan migrate
+```
+```
+php artisan db:seed
 ```
 ## 使用技術(実行環境)
 フレームワーク：Laravel  8.83.27　　
