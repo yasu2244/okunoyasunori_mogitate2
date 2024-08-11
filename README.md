@@ -16,14 +16,16 @@ $ touch php/Dockerfile
 $ touch php/php.ini
 ```
 その後各ファイルを作成します。
-ファイルが出来たら環境構築を行い、パッケージをインストールした後テーブルとダミーデータの作成を行います。
+ファイルが出来たらdockerでパッケージをインストールして環境構築を行います。
 ```
 $ docker compose build
 $ docker compose up -d
 $ docker compose exec php bash
-
 $ composer install
-
+```
+その後phpコンテナ内でテーブルとダミーデータの作成を行います。
+```
+$ php artisan key:generate
 $ php artisan migrate
 $ php artisan db:seed
 ```
